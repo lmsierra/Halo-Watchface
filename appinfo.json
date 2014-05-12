@@ -1,0 +1,66 @@
+{
+  "uuid": "72cd138b-2ed3-485f-98b8-30eeafdf186e",
+  "shortName": "halo-watchface",
+  "longName": "halo-watchface",
+  "companyName": "Luis Miguel Sierra",
+  "versionCode": 1,
+  "versionLabel": "1.1.0",
+  "watchapp": {
+    "watchface": true
+  },
+  "appKeys": {},
+  "resources": {
+    "media": [{
+       "characterRegex": "[:0-9 a-z A-Z]",
+        "type": "font",
+        "name": "FONT_HALO_SUBSET_28",
+        "file": "fonts/Halo3.ttf"
+      },{
+       "characterRegex": "[:0-9 a-z A-Z]",
+        "type": "font",
+        "name": "FONT_HALO_SUBSET_22",
+        "file": "fonts/Halo3.ttf"
+      },{
+       "characterRegex": "[:0-9 a-z A-Z]",
+        "type": "font",
+        "name": "FONT_HALO_SUBSET_25",
+        "file": "fonts/Halo3.ttf"
+      },{
+        "type": "png",
+        "name": "IMAGE_BACKGROUND",
+        "file": "images/background2.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BLUETOOTH",
+        "file": "images/bluetooth.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BATTERY_EMPTY",
+        "file": "images/battery_empty.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BATTERY_LOW",
+        "file": "images/battery_low.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BATTERY_25",
+        "file": "images/battery_25.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BATTERY_50",
+        "file": "images/battery_50.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BATTERY_75",
+        "file": "images/battery_75.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BATTERY_100",
+        "file": "images/battery_100.png"
+      },{
+        "type": "png",
+        "name": "IMAGE_BATTERY_CHARGE",
+        "file": "images/battery_charge.png"
+      }]
+  }
+}
