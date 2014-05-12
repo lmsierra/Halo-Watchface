@@ -85,11 +85,12 @@ static void handle_second_tick(struct tm* tick_time, TimeUnits units_changed) {
                            "October",
                           "November",
                           "December"};
+  // Must contain the maximum number of characters you want to show
   static char day[] = "00";
 
-  // If hour >00 && hour <12, set background color as black (background) and white (layers)
+  // from 12 to 00  -> black background - white images/text
   // Else invert color
-  if(tick_time->tm_hour >00 && tick_time->tm_hour<12){
+  if(tick_time->tm_hour >=00 && tick_time->tm_hour<12){
     layer_set_hidden(inverter_layer_get_layer(inverter_layer), false);
   }else{
     layer_set_hidden(inverter_layer_get_layer(inverter_layer), true);
@@ -106,7 +107,6 @@ static void handle_second_tick(struct tm* tick_time, TimeUnits units_changed) {
 }
 
 // Check bluetooth connection. If not connected, image will be hidden
-// Short vibration when connection status changes
 static void handle_bluetooth(bool connected) {
   layer_set_hidden(bitmap_layer_get_layer(bluetooth_layer), !connected);
 }
